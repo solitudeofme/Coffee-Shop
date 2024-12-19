@@ -25,6 +25,9 @@ module.exports = {
         aradMedium: "Arad Medium",
         aradSemiBold: "Arad SemiBold",
       },
+      letterSpacing: {
+        tightest: "-0.065em",
+      },
     },
   },
   plugins: [],
