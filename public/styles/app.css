@@ -554,12 +554,61 @@ video {
   display: none;
 }
 
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity, 1));
+@font-face {
+  font-family: "pinar-400";
+
+  src: local("pinar-400"),
+      url("../fonts/pinar/pinar-400.woff2") format("woff2");
+
+  font-display: swap;
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+@font-face {
+  font-family: "pinar-700";
+
+  src: local("pinar-700"),
+      url("../fonts/pinar/pinar-700.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "iranyekan regular";
+
+  src: local("iranyekan regular"),
+      url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "iranyekan bold";
+
+  src: local("iranyekan bold"),
+      url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "iranyekan light";
+
+  src: local("iranyekan light"),
+      url("../fonts/iranyekan/woff2/iranyekanweblight.woff2") format("woff2");
+}
+
+.font-iranyekan {
+  font-family: iranyekan regular;
+}
+
+.font-iranyekanBold {
+  font-family: iranyekan bold;
+}
+
+.font-iranyekanLight {
+  font-family: iranyekan light;
+}
+
+.font-pinar-400 {
+  font-family: pinar-400;
+}
+
+.font-pinar-700 {
+  font-family: pinar-700;
 }

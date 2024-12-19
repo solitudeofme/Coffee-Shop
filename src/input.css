@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "pinar-400";
+    src: local("pinar-400"),
+      url("../fonts/pinar/pinar-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "pinar-700";
+    src: local("pinar-700"),
+      url("../fonts/pinar/pinar-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "iranyekan regular";
+    src: local("iranyekan regular"),
+      url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "iranyekan bold";
+    src: local("iranyekan bold"),
+      url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "iranyekan light";
+    src: local("iranyekan light"),
+      url("../fonts/iranyekan/woff2/iranyekanweblight.woff2") format("woff2");
+  }
+}
