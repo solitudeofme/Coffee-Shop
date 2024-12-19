@@ -573,32 +573,28 @@ video {
 }
 
 @font-face {
-  font-family: "iranyekan regular";
+  font-family: "Arad Regular";
 
-  src: local("iranyekan regular"),
-      url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2");
+  src: local("Arad Regular"),
+      url("../fonts/Arad/Arad-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "iranyekan bold";
+  font-family: "Arad Meduim";
 
-  src: local("iranyekan bold"),
-      url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2");
+  src: local("Arad Meduim"),
+      url("../fonts/Arad/Arad-Meduim.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "iranyekan light";
+  font-family: "Arad SemiBold";
 
-  src: local("iranyekan light"),
-      url("../fonts/iranyekan/woff2/iranyekanweblight.woff2") format("woff2");
+  src: local("Arad SemiBold"),
+      url("../fonts/Arad/Arad-SemiBold.woff2") format("woff2");
 }
 
 .fixed {
   position: fixed;
-}
-
-.top-9 {
-  top: 2.25rem;
 }
 
 .left-0 {
@@ -607,6 +603,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.top-9 {
+  top: 2.25rem;
 }
 
 .mx-auto {
@@ -686,31 +686,22 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.font-aradSemiBold {
+  font-family: Arad SemiBold;
 }
 
-.font-iranyekan {
-  font-family: iranyekan regular;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.font-arad {
+  font-family: Arad Regular;
 }
 
 .text-xl {

@@ -15,18 +15,18 @@
     font-display: swap;
   }
   @font-face {
-    font-family: "iranyekan regular";
-    src: local("iranyekan regular"),
-      url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2");
+    font-family: "Arad Regular";
+    src: local("Arad Regular"),
+      url("../fonts/Arad/Arad-Regular.woff2") format("woff2");
   }
   @font-face {
-    font-family: "iranyekan bold";
-    src: local("iranyekan bold"),
-      url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2");
+    font-family: "Arad Meduim";
+    src: local("Arad Meduim"),
+      url("../fonts/Arad/Arad-Meduim.woff2") format("woff2");
   }
   @font-face {
-    font-family: "iranyekan light";
-    src: local("iranyekan light"),
-      url("../fonts/iranyekan/woff2/iranyekanweblight.woff2") format("woff2");
+    font-family: "Arad SemiBold";
+    src: local("Arad SemiBold"),
+      url("../fonts/Arad/Arad-SemiBold.woff2") format("woff2");
   }
 }

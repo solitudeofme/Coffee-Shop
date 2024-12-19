@@ -21,9 +21,9 @@ module.exports = {
       fontFamily: {
         "pinar-400": "pinar-400",
         "pinar-700": "pinar-700",
-        iranyekan: "iranyekan regular",
-        iranyekanBold: "iranyekan bold",
-        iranyekanLight: "iranyekan light",
+        arad: "Arad Regular",
+        aradMeduim: "Arad Medium",
+        aradSemiBold: "Arad SemiBold",
       },
     },
   },
