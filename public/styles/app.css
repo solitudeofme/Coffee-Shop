@@ -580,10 +580,10 @@ video {
 }
 
 @font-face {
-  font-family: "Arad Meduim";
+  font-family: "Arad Medium";
 
-  src: local("Arad Meduim"),
-      url("../fonts/Arad/Arad-Meduim.woff2") format("woff2");
+  src: local("Arad Medium"),
+      url("../fonts/Arad/Arad-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -696,12 +696,12 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.font-aradSemiBold {
-  font-family: Arad SemiBold;
-}
-
 .font-arad {
   font-family: Arad Regular;
+}
+
+.font-aradMedium {
+  font-family: Arad Medium;
 }
 
 .text-xl {

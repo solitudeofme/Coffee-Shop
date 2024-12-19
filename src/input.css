@@ -20,9 +20,9 @@
       url("../fonts/Arad/Arad-Regular.woff2") format("woff2");
   }
   @font-face {
-    font-family: "Arad Meduim";
-    src: local("Arad Meduim"),
-      url("../fonts/Arad/Arad-Meduim.woff2") format("woff2");
+    font-family: "Arad Medium";
+    src: local("Arad Medium"),
+      url("../fonts/Arad/Arad-Medium.woff2") format("woff2");
   }
   @font-face {
     font-family: "Arad SemiBold";

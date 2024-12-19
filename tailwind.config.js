@@ -22,7 +22,7 @@ module.exports = {
         "pinar-400": "pinar-400",
         "pinar-700": "pinar-700",
         arad: "Arad Regular",
-        aradMeduim: "Arad Medium",
+        aradMedium: "Arad Medium",
         aradSemiBold: "Arad SemiBold",
       },
     },
