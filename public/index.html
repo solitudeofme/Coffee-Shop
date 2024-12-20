@@ -67,17 +67,17 @@
             <img src="images/app-logo.png" alt="Coffee Logo" />
           </div>
           <ul
-            class="flex gap-x-9 items-center text-xl text-gray-300 tracking-tightest child:h-14 child:leading-[56px]"
+            class="flex gap-x-9 items-center text-xl text-gray-300 child-hover:text-orange-300 child-hover:transition-colors tracking-tightest child:h-14 child:leading-[56px]"
           >
             <li class="text-orange-200 font-aradMedium">
               <a href="#">صفحه اصلی</a>
             </li>
             <!-- Has Sub Menu -->
-            <li class="relative">
+            <li class="relative group">
               <a href="#">فروشگاه</a>
               <!-- Sub Menu -->
               <div
-                class="absolute top-full child:block w-52 p-6 rounded-xl bg-white border-t-[3px] border-orange-300 text-base text-zinc-700 dark:bg-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child-hover:text-orange-300 child:transition-colors"
+                class="absolute top-full child:block w-52 p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all rounded-xl bg-white border-t-[3px] border-orange-300 text-base text-zinc-700 dark:bg-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child-hover:text-orange-300 child:transition-colors"
               >
                 <a href="#">قهوه</a>
                 <a href="#"> ویژه در سطح جهانی</a>
