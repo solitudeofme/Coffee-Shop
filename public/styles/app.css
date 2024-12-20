@@ -623,6 +623,10 @@ body {
   top: 2.25rem;
 }
 
+.top-full {
+  top: 100%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
