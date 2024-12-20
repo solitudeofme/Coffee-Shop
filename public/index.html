@@ -73,16 +73,19 @@
               <a href="#">صفحه اصلی</a>
             </li>
             <!-- Has Sub Menu -->
-            <li class="">
+            <li class="relative">
               <a href="#">فروشگاه</a>
               <!-- Sub Menu -->
-              <ul class="hidden">
-                <li><a href="#">قهوه ویژه در سطح جهانی</a></li>
-                <li><a href="#">قهوه درجه یک</a></li>
-                <li><a href="#">ترکیبات تجاری</a></li>
-                <li><a href="#">کپسول قهوه </a></li>
-                <li><a href="#">قهوه زینو برزیلی</a></li>
-              </ul>
+              <div
+                class="absolute child:block w-52 p-6 rounded-xl bg-white border-t-[3px] border-orange-300 text-base text-zinc-700 dark:bg-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child-hover:text-orange-300 child:transition-colors"
+              >
+                <a href="#">قهوه</a>
+                <a href="#"> ویژه در سطح جهانی</a>
+                <a href="#">قهوه درجه یک</a>
+                <a href="#">ترکیبات تجاری</a>
+                <a href="#">کپسول قهوه </a>
+                <a href="#">قهوه زینو برزیلی</a>
+              </div>
             </li>
             <li class=""><a href="#">دیکشنری</a></li>
             <li class=""><a href="#">بلاگ</a></li>
@@ -97,9 +100,7 @@
           <!-- Cart Icon & Theme Switch Btn -->
           <div class="inline-flex gap-x-5">
             <div>
-              <svg class="w-8 h-8">
-                <use xlink:href="#shopping-cart"></use>
-              </svg>
+              <svg class="w-8 h-8"><use xlink:href="#shopping-cart"></use></svg>
             </div>
             <div>
               <svg class="w-8 h-8"><use xlink:href="#moon"></use></svg>
