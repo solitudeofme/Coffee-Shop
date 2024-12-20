@@ -30,7 +30,8 @@
       url("../fonts/Arad/Arad-SemiBold.woff2") format("woff2");
   }
   body {
-    background-image: url("public/images/headerBgDesktop.png");
+    background-image: url("../images/headerBgDesktop.png");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
