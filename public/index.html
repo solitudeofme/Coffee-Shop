@@ -77,7 +77,7 @@
               <a href="#">فروشگاه</a>
               <!-- Sub Menu -->
               <div
-                class="absolute top-full child:block w-52 p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all rounded-xl bg-white border-t-[3px] border-orange-300 text-base text-zinc-700 dark:bg-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child-hover:text-orange-300 child:transition-colors"
+                class="absolute top-full child:inline-block w-52 p-6 invisible group-hover:visible transition-all rounded-xl bg-white border-t-[3px] border-orange-300 text-base text-zinc-700 dark:bg-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child-hover:text-orange-300 child:transition-colors"
               >
                 <a href="#">قهوه</a>
                 <a href="#"> ویژه در سطح جهانی</a>
@@ -99,11 +99,17 @@
         >
           <!-- Cart Icon & Theme Switch Btn -->
           <div class="inline-flex gap-x-5">
+            <!-- Cart icon -->
             <div>
-              <svg class="w-8 h-8"><use xlink:href="#shopping-cart"></use></svg>
+              <div class="py-3">
+                <svg class="w-8 h-8"><use href="#shopping-cart"></use></svg>
+              </div>
+              <!-- Cart box -->
+              <div></div>
             </div>
-            <div>
-              <svg class="w-8 h-8"><use xlink:href="#moon"></use></svg>
+            <!-- moon icon -->
+            <div class="py-3">
+              <svg class="w-8 h-8"><use href="#moon"></use></svg>
             </div>
           </div>
           <!-- Divide Border -->
@@ -111,7 +117,7 @@
           <!-- Login Link -->
           <a href="#" class="inline-flex gap-x-2">
             <svg class="w-8 h-8">
-              <use xlink:href="#arrow-right-end-on-rectangle"></use>
+              <use href="#arrow-right-end-on-rectangle"></use>
             </svg>
             <div>ورود | ثبت نام</div>
           </a>
