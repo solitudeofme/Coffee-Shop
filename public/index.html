@@ -6,6 +6,7 @@
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="icon" href="images/fav-icon.png" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@persian-tools/persian-tools/build/persian-tools.umd.js"></script>
     <script type="text/javascript">
       document.documentElement.classList.toggle(
         "dark",
@@ -169,7 +170,7 @@
               </div>
               <!-- Cart box -->
               <div
-                class="w-[400px] group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white p-5 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
+                class="w-[400px] invisible opacity-0 group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white p-5 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
               >
                 <!-- Cart Heading -->
                 <div
@@ -199,13 +200,13 @@
                       <div class="flex justify-between items-center">
                         <!-- Number input  -->
                         <form
-                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
                         >
                           <button
                             type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
                               <use href="#plus"></use>
@@ -213,16 +214,15 @@
                           </button>
                           <input
                             type="text"
-                            id="quantity-input"
                             data-input-counter
-                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-7"
                             value="۱"
                             required
                           />
                           <button
                             type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
                             class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
@@ -256,13 +256,13 @@
                       <div class="flex justify-between items-center">
                         <!-- Number input  -->
                         <form
-                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
                         >
                           <button
                             type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
                               <use href="#plus"></use>
@@ -270,16 +270,15 @@
                           </button>
                           <input
                             type="text"
-                            id="quantity-input"
                             data-input-counter
-                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-7"
                             value="۱"
                             required
                           />
                           <button
                             type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
                             class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
@@ -313,13 +312,13 @@
                       <div class="flex justify-between items-center">
                         <!-- Number input  -->
                         <form
-                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
                         >
                           <button
                             type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
                               <use href="#plus"></use>
@@ -327,16 +326,15 @@
                           </button>
                           <input
                             type="text"
-                            id="quantity-input"
                             data-input-counter
-                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-7"
                             value="۱"
                             required
                           />
                           <button
                             type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
                             class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
                           >
                             <svg class="w-5 h-5 text-orange-300">
@@ -402,6 +400,6 @@
         </div>
       </div>
     </header>
-    <script src="scripts/app.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-"use script";
+("use script");
 
 // Theme toggle button
 const themeToggleBtn = document.getElementById("theme-toggle-btn");
@@ -13,3 +13,23 @@ themeToggleBtn.addEventListener("click", () => {
 });
 
 // number of items in the cart
+document.addEventListener("click", (e) => {
+  if (e.target.closest("button[data-input-counter-decrement]")) {
+    const cartItemsInput = e.target
+      .closest("form")
+      .querySelector("input[ data-input-counter]");
+    if (cartItemsInput.value) {
+      cartItemsInput.value = PersianTools.digitsEnToFa(
+        Math.max(1, Number(PersianTools.digitsFaToEn(cartItemsInput.value)) - 1)
+      );
+    }
+  } else if (e.target.closest("button[data-input-counter-increment]")) {
+    const cartItemsInput = e.target
+      .closest("form")
+      .querySelector("input[ data-input-counter]");
+
+    cartItemsInput.value = PersianTools.digitsEnToFa(
+      Number(PersianTools.digitsFaToEn(cartItemsInput.value)) + 1
+    );
+  }
+});
