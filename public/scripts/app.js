@@ -37,8 +37,8 @@ const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
 
 cartItemsInputs.forEach((inputElement) => {
   const enforceDigitLimit = (e) => {
+    inputElement.value = inputElement.value.replace(/[^0-9۰-۹]/g, "");
     if (inputElement.value.length >= 3) {
-      e.preventDefault();
       inputElement.value = inputElement.value.substring(0, 3);
     }
   };
