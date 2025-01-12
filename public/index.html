@@ -93,7 +93,33 @@
           d="M15.75 19.5 8.25 12l7.5-7.5"
         />
       </symbol>
+      <symbol
+        id="plus"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4.5v15m7.5-7.5h-15"
+        />
+      </symbol>
+      <symbol
+        id="minus"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </symbol>
     </svg>
+    <!-- Header -->
     <header
       class="fixed top-9 left-0 right-0 w-[90%] h-24 px-10 py-5 flex items-center rounded-3xl mx-auto bg-black/50 backdrop-blur-[6px]"
     >
@@ -143,7 +169,7 @@
               </div>
               <!-- Cart box -->
               <div
-                class="w-[400px] opacity-0 invisible group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white p-5 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
+                class="w-[400px] group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white p-5 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
               >
                 <!-- Cart Heading -->
                 <div
@@ -166,16 +192,54 @@
                     </div>
                     <div>
                       <h4
-                        class="text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
                       >
                         قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
                       </h4>
-                      <span
-                        class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                        >۱۴.۵۰۰ تومان تخفیف</span
-                      >
-                      <div>
-                        ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                      <div class="flex justify-between items-center">
+                        <!-- Number input  -->
+                        <form
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                        >
+                          <button
+                            type="button"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#plus"></use>
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="quantity-input"
+                            data-input-counter
+                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            value="۱"
+                            required
+                          />
+                          <button
+                            type="button"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#minus"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <!-- Product info -->
+                        <div>
+                          <span
+                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                            >۱۴.۵۰۰ تومان تخفیف</span
+                          >
+                          <div>
+                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,16 +249,54 @@
                     </div>
                     <div>
                       <h4
-                        class="text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
                       >
                         قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
                       </h4>
-                      <span
-                        class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                        >۱۴.۵۰۰ تومان تخفیف</span
-                      >
-                      <div>
-                        ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                      <div class="flex justify-between items-center">
+                        <!-- Number input  -->
+                        <form
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                        >
+                          <button
+                            type="button"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#plus"></use>
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="quantity-input"
+                            data-input-counter
+                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            value="۱"
+                            required
+                          />
+                          <button
+                            type="button"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#minus"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <!-- Product info -->
+                        <div>
+                          <span
+                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                            >۱۴.۵۰۰ تومان تخفیف</span
+                          >
+                          <div>
+                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -204,16 +306,54 @@
                     </div>
                     <div>
                       <h4
-                        class="text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
                       >
                         قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
                       </h4>
-                      <span
-                        class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                        >۱۴.۵۰۰ تومان تخفیف</span
-                      >
-                      <div>
-                        ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                      <div class="flex justify-between items-center">
+                        <!-- Number input  -->
+                        <form
+                          class="flex w-24 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300"
+                        >
+                          <button
+                            type="button"
+                            name="decrement-button"
+                            data-input-counter-decrement="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800 focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#plus"></use>
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="quantity-input"
+                            data-input-counter
+                            class="text-center text-orange-300 text-xl focus:outline-none w-5"
+                            value="۱"
+                            required
+                          />
+                          <button
+                            type="button"
+                            name="increment-button"
+                            data-input-counter-increment="quantity-input"
+                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                          >
+                            <svg class="w-5 h-5 text-orange-300">
+                              <use href="#minus"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <!-- Product info -->
+                        <div>
+                          <span
+                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                            >۱۴.۵۰۰ تومان تخفیف</span
+                          >
+                          <div>
+                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -253,7 +393,11 @@
             <svg class="w-8 h-8">
               <use href="#arrow-right-end-on-rectangle"></use>
             </svg>
-            <div>ورود | ثبت نام</div>
+            <div class="flex items-center gap-x-3">
+              <div>ورود</div>
+              <div>|</div>
+              <div>ثبت نام</div>
+            </div>
           </a>
         </div>
       </div>

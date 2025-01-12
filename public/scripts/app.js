@@ -1,4 +1,6 @@
 "use script";
+
+// Theme toggle button
 const themeToggleBtn = document.getElementById("theme-toggle-btn");
 themeToggleBtn.addEventListener("click", () => {
   if (localStorage.theme === "dark") {
@@ -9,3 +11,5 @@ themeToggleBtn.addEventListener("click", () => {
     localStorage.setItem("theme", "dark");
   }
 });
+
+// number of items in the cart
