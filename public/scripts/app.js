@@ -29,7 +29,39 @@ document.addEventListener("click", (e) => {
       .querySelector("input[ data-input-counter]");
 
     cartItemsInput.value = PersianTools.digitsEnToFa(
-      Number(PersianTools.digitsFaToEn(cartItemsInput.value)) + 1
+      Math.min(999, Number(PersianTools.digitsFaToEn(cartItemsInput.value)) + 1)
     );
   }
+});
+const inputElements = document.querySelectorAll("input[data-input-counter]");
+
+inputElements.forEach((inputElement) => {
+  // Function to enforce the digit limit
+  const enforceDigitLimit = (e) => {
+    // Allow backspace, delete, tab, escape, enter, and navigation keys for keydown event
+    if (
+      e.type === "keydown" &&
+      (e.key === "Backspace" ||
+        e.key === "Delete" ||
+        e.key === "Tab" ||
+        e.key === "Escape" ||
+        e.key === "Enter" ||
+        (e.key >= "ArrowLeft" && e.key <= "ArrowDown"))
+    ) {
+      return;
+    }
+
+    // Check the length of the value
+    if (inputElement.value.length >= 3) {
+      e.preventDefault();
+      inputElement.value = inputElement.value.substring(0, 3);
+    }
+  };
+
+  // Event listeners for keydown, paste, and input events
+  inputElement.addEventListener("keydown", enforceDigitLimit);
+  inputElement.addEventListener("paste", (e) => {
+    setTimeout(() => enforceDigitLimit(e), 0);
+  });
+  inputElement.addEventListener("input", enforceDigitLimit);
 });

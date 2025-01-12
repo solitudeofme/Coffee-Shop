@@ -740,6 +740,18 @@ body {
   width: 1.75rem;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
