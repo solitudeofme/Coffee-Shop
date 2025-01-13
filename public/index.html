@@ -170,208 +170,329 @@
               </div>
               <!-- Cart box -->
               <div
-                class="w-[400px] invisible opacity-0 group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white p-5 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
+                class="custom-scrollbar-1-dark custom-scrollbar-1 overflow-y-scroll max-h-[525px] w-[400px] invisible opacity-0 group-hover:visible group-hover:opacity-100 delay-75 transition-all shadow-normal bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white py-5 pl-5 pr-2 absolute left-0 top-full border-t-[3px] border-orange-300 rounded-xl"
               >
-                <!-- Cart Heading -->
-                <div
-                  class="font-aradMedium flex justify-between items-center tracking-tighter text-xs"
-                >
-                  <span class="text-gray-300">۱ خرید</span>
-                  <a class="flex items-center justify-between text-orange-300">
-                    مشاهده سبد خرید
-                    <svg class="w-5 h-5" fill="current-color">
-                      <use href="#chevron-left"></use></svg
-                  ></a>
-                </div>
-                <!-- Cart Body -->
-                <div
-                  class="child:py-5 divide-y divide-gray-100 dark:divide-white/10 border-b border-gray-300 dark:border-b-white/10"
-                >
-                  <div class="flex items-center justify-between gap-x-2">
-                    <div class="w-30 h-30">
-                      <img src="images/products/p1.png" alt="product 1" />
-                    </div>
-                    <div>
-                      <h4
-                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
-                      >
-                        قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
-                      </h4>
-                      <div class="flex justify-between items-center">
-                        <!-- Number input  -->
-                        <form
-                          class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
-                        >
-                          <button
-                            type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
-                            class="bg-white dark:bg-zinc-700 focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#plus"></use>
-                            </svg>
-                          </button>
-                          <input
-                            type="text"
-                            data-input-counter
-                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
-                            value="۱"
-                            required
-                          />
-                          <button
-                            type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#minus"></use>
-                            </svg>
-                          </button>
-                        </form>
-                        <!-- Product info -->
-                        <div>
-                          <span
-                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                            >۱۴.۵۰۰ تومان تخفیف</span
-                          >
-                          <div>
-                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between gap-x-2">
-                    <div class="w-30 h-30">
-                      <img src="images/products/p3.png" alt="product 1" />
-                    </div>
-                    <div>
-                      <h4
-                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
-                      >
-                        قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی قهوه اسپرسو
-                        بن مانو مدل پریسکا مدل ۲۵۰ گرمی
-                      </h4>
-                      <div class="flex justify-between items-center">
-                        <!-- Number input  -->
-                        <form
-                          class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
-                        >
-                          <button
-                            type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
-                            class="bg-white dark:bg-zinc-700 focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#plus"></use>
-                            </svg>
-                          </button>
-                          <input
-                            type="text"
-                            data-input-counter
-                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
-                            value="۱"
-                            required
-                          />
-                          <button
-                            type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#minus"></use>
-                            </svg>
-                          </button>
-                        </form>
-                        <!-- Product info -->
-                        <div>
-                          <span
-                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                            >۱۴.۵۰۰ تومان تخفیف</span
-                          >
-                          <div>
-                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between gap-x-2">
-                    <div class="w-30 h-30">
-                      <img src="images/products/p2.png" alt="product 1" />
-                    </div>
-                    <div>
-                      <h4
-                        class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
-                      >
-                        قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
-                      </h4>
-                      <div class="flex justify-between items-center">
-                        <!-- Number input  -->
-                        <form
-                          class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
-                        >
-                          <button
-                            type="button"
-                            name="increment-button"
-                            data-input-counter-increment="quantity-input"
-                            class="bg-white dark:bg-zinc-700 focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#plus"></use>
-                            </svg>
-                          </button>
-                          <input
-                            type="text"
-                            data-input-counter
-                            class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
-                            value="۱"
-                            required
-                          />
-                          <button
-                            type="button"
-                            name="decrement-button"
-                            data-input-counter-decrement="quantity-input"
-                            class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
-                          >
-                            <svg class="w-5 h-5 text-orange-300">
-                              <use href="#minus"></use>
-                            </svg>
-                          </button>
-                        </form>
-                        <!-- Product info -->
-                        <div>
-                          <span
-                            class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
-                            >۱۴.۵۰۰ تومان تخفیف</span
-                          >
-                          <div>
-                            ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Cart Footer -->
-                <div class="flex justify-between items-center mt-4">
-                  <div class="flex flex-col justify-between">
-                    <span class="tracking-tighter text-xs text-gray-300"
-                      >مبلغ قابل پرداخت</span
-                    >
-                    <span class="">
-                      ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
-                    </span>
-                  </div>
-                  <button
-                    class="bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 text-white text-base tracking-tightest rounded-md py-2 px-3"
+                <div class="custom-rtl">
+                  <!-- Cart Heading -->
+                  <div
+                    class="font-aradMedium flex justify-between items-center tracking-tighter text-xs"
                   >
-                    ثبت سفارش
-                  </button>
+                    <span class="text-gray-300">۱ خرید</span>
+                    <a
+                      class="flex items-center justify-between text-orange-300 cursor-pointer"
+                    >
+                      مشاهده سبد خرید
+                      <svg class="w-5 h-5" fill="current-color">
+                        <use href="#chevron-left"></use></svg
+                    ></a>
+                  </div>
+                  <!-- Cart Body -->
+                  <div
+                    class="child:py-5 divide-y divide-gray-100 dark:divide-white/10 border-b border-gray-300 dark:border-b-white/10"
+                  >
+                    <div class="flex items-center justify-between gap-x-2">
+                      <div class="w-30 h-30">
+                        <img src="images/products/p1.png" alt="product 1" />
+                      </div>
+                      <div>
+                        <h4
+                          class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        >
+                          قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
+                        </h4>
+                        <div class="flex justify-between items-center">
+                          <!-- Number input  -->
+                          <form
+                            class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
+                          >
+                            <button
+                              type="button"
+                              name="increment-button"
+                              data-input-counter-increment="quantity-input"
+                              class="bg-white dark:bg-zinc-700 focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#plus"></use>
+                              </svg>
+                            </button>
+                            <input
+                              type="text"
+                              data-input-counter
+                              class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
+                              value="۱"
+                              required
+                            />
+                            <button
+                              type="button"
+                              name="decrement-button"
+                              data-input-counter-decrement="quantity-input"
+                              class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#minus"></use>
+                              </svg>
+                            </button>
+                          </form>
+                          <!-- Product info -->
+                          <div>
+                            <span
+                              class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                              >۱۴.۵۰۰ تومان تخفیف</span
+                            >
+                            <div>
+                              ۱۷۵,۰۰۰
+                              <span class="text-sm font-arad">تومان</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-x-2">
+                      <div class="w-30 h-30">
+                        <img src="images/products/p3.png" alt="product 1" />
+                      </div>
+                      <div>
+                        <h4
+                          class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        >
+                          قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی قهوه
+                          اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
+                        </h4>
+                        <div class="flex justify-between items-center">
+                          <!-- Number input  -->
+                          <form
+                            class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
+                          >
+                            <button
+                              type="button"
+                              name="increment-button"
+                              data-input-counter-increment="quantity-input"
+                              class="bg-white dark:bg-zinc-700 focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#plus"></use>
+                              </svg>
+                            </button>
+                            <input
+                              type="text"
+                              data-input-counter
+                              class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
+                              value="۱"
+                              required
+                            />
+                            <button
+                              type="button"
+                              name="decrement-button"
+                              data-input-counter-decrement="quantity-input"
+                              class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#minus"></use>
+                              </svg>
+                            </button>
+                          </form>
+                          <!-- Product info -->
+                          <div>
+                            <span
+                              class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                              >۱۴.۵۰۰ تومان تخفیف</span
+                            >
+                            <div>
+                              ۱۷۵,۰۰۰
+                              <span class="text-sm font-arad">تومان</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-x-2">
+                      <div class="w-30 h-30">
+                        <img src="images/products/p2.png" alt="product 1" />
+                      </div>
+                      <div>
+                        <h4
+                          class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        >
+                          قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
+                        </h4>
+                        <div class="flex justify-between items-center">
+                          <!-- Number input  -->
+                          <form
+                            class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
+                          >
+                            <button
+                              type="button"
+                              name="increment-button"
+                              data-input-counter-increment="quantity-input"
+                              class="bg-white dark:bg-zinc-700 focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#plus"></use>
+                              </svg>
+                            </button>
+                            <input
+                              type="text"
+                              data-input-counter
+                              class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
+                              value="۱"
+                              required
+                            />
+                            <button
+                              type="button"
+                              name="decrement-button"
+                              data-input-counter-decrement="quantity-input"
+                              class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#minus"></use>
+                              </svg>
+                            </button>
+                          </form>
+                          <!-- Product info -->
+                          <div>
+                            <span
+                              class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                              >۱۴.۵۰۰ تومان تخفیف</span
+                            >
+                            <div>
+                              ۱۷۵,۰۰۰
+                              <span class="text-sm font-arad">تومان</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-x-2">
+                      <div class="w-30 h-30">
+                        <img src="images/products/p2.png" alt="product 1" />
+                      </div>
+                      <div>
+                        <h4
+                          class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        >
+                          قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
+                        </h4>
+                        <div class="flex justify-between items-center">
+                          <!-- Number input  -->
+                          <form
+                            class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
+                          >
+                            <button
+                              type="button"
+                              name="increment-button"
+                              data-input-counter-increment="quantity-input"
+                              class="bg-white dark:bg-zinc-700 focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#plus"></use>
+                              </svg>
+                            </button>
+                            <input
+                              type="text"
+                              data-input-counter
+                              class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
+                              value="۱"
+                              required
+                            />
+                            <button
+                              type="button"
+                              name="decrement-button"
+                              data-input-counter-decrement="quantity-input"
+                              class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#minus"></use>
+                              </svg>
+                            </button>
+                          </form>
+                          <!-- Product info -->
+                          <div>
+                            <span
+                              class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                              >۱۴.۵۰۰ تومان تخفیف</span
+                            >
+                            <div>
+                              ۱۷۵,۰۰۰
+                              <span class="text-sm font-arad">تومان</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-x-2">
+                      <div class="w-30 h-30">
+                        <img src="images/products/p2.png" alt="product 1" />
+                      </div>
+                      <div>
+                        <h4
+                          class="w-64 text-zinc-700 dark:text-white line-clamp-2 font-aradMedium text-base tracking-normal mb-3"
+                        >
+                          قهوه اسپرسو بن مانو مدل پریسکا مدل ۲۵۰ گرمی
+                        </h4>
+                        <div class="flex justify-between items-center">
+                          <!-- Number input  -->
+                          <form
+                            class="flex w-28 justify-between items-center py-2 px-3 rounded-3xl border border-gray-300 dark:border-white/10"
+                          >
+                            <button
+                              type="button"
+                              name="increment-button"
+                              data-input-counter-increment="quantity-input"
+                              class="bg-white dark:bg-zinc-700 focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#plus"></use>
+                              </svg>
+                            </button>
+                            <input
+                              type="text"
+                              data-input-counter
+                              class="text-center dark:bg-zinc-700 text-orange-300 text-xl focus:outline-none w-10"
+                              value="۱"
+                              required
+                            />
+                            <button
+                              type="button"
+                              name="decrement-button"
+                              data-input-counter-decrement="quantity-input"
+                              class="bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800focus:outline-none"
+                            >
+                              <svg class="w-5 h-5 text-orange-300">
+                                <use href="#minus"></use>
+                              </svg>
+                            </button>
+                          </form>
+                          <!-- Product info -->
+                          <div>
+                            <span
+                              class="text-xs text-teal-600 dark:text-emerald-500 font-aradSemiBold tracking-tighter"
+                              >۱۴.۵۰۰ تومان تخفیف</span
+                            >
+                            <div>
+                              ۱۷۵,۰۰۰
+                              <span class="text-sm font-arad">تومان</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Cart Footer -->
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="flex flex-col justify-between">
+                      <span class="tracking-tighter text-xs text-gray-300"
+                        >مبلغ قابل پرداخت</span
+                      >
+                      <span class="">
+                        ۱۷۵,۰۰۰ <span class="text-sm font-arad">تومان</span>
+                      </span>
+                    </div>
+                    <button
+                      class="bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-emerald-600 text-white text-base tracking-tightest rounded-md py-2 px-3"
+                    >
+                      ثبت سفارش
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

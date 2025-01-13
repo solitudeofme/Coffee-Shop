@@ -692,8 +692,16 @@ body {
   height: 2rem;
 }
 
-.w-24 {
-  width: 6rem;
+.max-h-\[525px\] {
+  max-height: 525px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-30 {
@@ -730,26 +738,6 @@ body {
 
 .w-px {
   width: 1px;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .cursor-pointer {
@@ -810,6 +798,10 @@ body {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity, 1));
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -867,10 +859,6 @@ body {
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -898,6 +886,14 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -1004,6 +1000,47 @@ body {
   transition-delay: 75ms;
 }
 
+.custom-scrollbar-1 {
+  direction: ltr;
+}
+
+.custom-rtl {
+  direction: rtl;
+}
+
+.custom-scrollbar-1::-webkit-scrollbar {
+  width: 1vw;
+}
+
+.custom-scrollbar-1::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 20px;
+  margin: 1em 0;
+}
+
+.custom-scrollbar-1::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.dark .custom-scrollbar-1-dark::-webkit-scrollbar {
+  width: 1vw;
+}
+
+.dark .custom-scrollbar-1-dark::-webkit-scrollbar-track {
+  margin: 1em 0;
+  background: #3f3f46;
+  border-radius: 20px;
+}
+
+.dark .custom-scrollbar-1-dark::-webkit-scrollbar-thumb {
+  border: 3px solid #3f3f46;
+  background: #38383d;
+  height: 20px;
+  border-radius: 20px;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1108,9 +1145,4 @@ body {
 .dark\:hover\:bg-emerald-600:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:bg-zinc-800:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
 }
