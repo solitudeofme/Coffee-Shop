@@ -43,7 +43,7 @@
     direction: rtl;
   }
   .custom-scrollbar-1::-webkit-scrollbar {
-    width: 1vw;
+    width: 15px;
   }
   .custom-scrollbar-1::-webkit-scrollbar-track {
     background: white;
@@ -57,7 +57,7 @@
   }
 
   .dark .custom-scrollbar-1-dark::-webkit-scrollbar {
-    width: 1vw;
+    width: 15px;
   }
   .dark .custom-scrollbar-1-dark::-webkit-scrollbar-track {
     margin: 1em 0;

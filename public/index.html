@@ -122,16 +122,16 @@
     </svg>
     <!-- Header -->
     <header
-      class="fixed top-9 left-0 right-0 w-[90%] h-24 px-10 py-5 flex items-center rounded-3xl mx-auto bg-black/50 backdrop-blur-[6px]"
+      class="fixed top-9 left-0 right-0 md:w-[98%] lg:w-[95%] xl:w-[90%] h-24 px-5 lg:px-10 py-5 hidden md:flex items-center rounded-3xl mx-auto bg-black/50 backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!-- Logo & Menu -->
-        <nav class="flex gap-x-9">
+        <nav class="flex gap-x-6 lg:gap-x-9">
           <div>
             <img src="images/app-logo.png" alt="Coffee Logo" />
           </div>
           <ul
-            class="flex gap-x-9 items-center text-xl text-gray-300 child-hover:text-orange-300 child-hover:transition-colors tracking-tightest child:h-14 child:leading-[56px]"
+            class="flex gap-x-4 lg:gap-x-6 xl:gap-x-9 items-center text-xl text-gray-300 child-hover:text-orange-300 child-hover:transition-colors tracking-tightest child:h-14 child:leading-[56px]"
           >
             <li class="text-orange-200 font-aradMedium">
               <a href="#">صفحه اصلی</a>
@@ -159,10 +159,10 @@
         </nav>
         <!-- Cart & Theme Toggle & Login Link -->
         <div
-          class="flex items-center text-xl text-orange-200 gap-x-10 tracking-tightest"
+          class="flex items-center text-xl text-orange-200 gap-x-4 lg:gap-x-5 xl:gap-x-10 tracking-tightest"
         >
           <!-- Cart Icon & Theme Switch Btn -->
-          <div class="inline-flex gap-x-5">
+          <div class="inline-flex gap-x-4 lg:gap-x-5">
             <!-- Cart icon -->
             <div class="relative group">
               <div class="py-3 cursor-pointer">
@@ -513,11 +513,11 @@
             <svg class="w-8 h-8">
               <use href="#arrow-right-end-on-rectangle"></use>
             </svg>
-            <div class="flex items-center gap-x-3">
-              <div>ورود</div>
-              <div>|</div>
-              <div>ثبت نام</div>
-            </div>
+            <span class="hidden xl:flex items-center gap-x-3">
+              <span>ورود</span>
+              <span>|</span>
+              <span>ثبت نام</span>
+            </span>
           </a>
         </div>
       </div>
