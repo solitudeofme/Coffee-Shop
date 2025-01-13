@@ -692,6 +692,18 @@ body {
   height: 2rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-\[525px\] {
   max-height: 525px;
 }
@@ -734,6 +746,14 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .cursor-pointer {
@@ -877,6 +897,11 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-5 {
@@ -1091,6 +1116,10 @@ body {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-\[98\%\] {
