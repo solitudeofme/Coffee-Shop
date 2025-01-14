@@ -5,8 +5,11 @@ const navCloseBtn = document.querySelector(".nav-close-btn");
 const navOpenBtn = document.querySelector(".nav-open-btn");
 const overlay = document.querySelector(".overlay");
 const navMenu = document.querySelector(".nav-menu");
+const shopTitle = document.querySelector(".shop-title");
 const themeToggleBtns = document.querySelectorAll(".theme-toggle-btn");
 const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
+const shopSubMenu = document.getElementById("shop-sub-menu");
+const shopSubMenuBtn = document.getElementById("shop-sub-menu-btn");
 
 themeToggleBtns.forEach((themeToggleBtns) => {
   themeToggleBtns.addEventListener("click", () => {
@@ -60,4 +63,10 @@ navOpenBtn.addEventListener("click", () => {
 navCloseBtn.addEventListener("click", () => {
   overlay.classList.remove("overlay--visible");
   navMenu.classList.add("hidden");
+});
+
+shopSubMenuBtn.addEventListener("click", () => {
+  shopTitle.classList.toggle("text-orange-300");
+  shopSubMenu.classList.toggle("hidden");
+  shopSubMenu.classList.toggle("flex");
 });
