@@ -1,7 +1,13 @@
 ("use script");
 
 // Theme toggle button
+const navCloseBtn = document.querySelector(".nav-close-btn");
+const navOpenBtn = document.querySelector(".nav-open-btn");
+const overlay = document.querySelector(".overlay");
+const navMenu = document.querySelector(".nav-menu");
 const themeToggleBtns = document.querySelectorAll(".theme-toggle-btn");
+const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
+
 themeToggleBtns.forEach((themeToggleBtns) => {
   themeToggleBtns.addEventListener("click", () => {
     if (localStorage.theme === "dark") {
@@ -35,7 +41,6 @@ document.addEventListener("click", (e) => {
     );
   }
 });
-const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
 
 cartItemsInputs.forEach((inputElement) => {
   const enforceDigitLimit = (e) => {
@@ -48,12 +53,11 @@ cartItemsInputs.forEach((inputElement) => {
   inputElement.addEventListener("input", enforceDigitLimit);
 });
 
-const xMarkBtns = document.querySelectorAll(".x-mark-btn");
-
-xMarkBtns.forEach((xMarkBtn) => {
-  xMarkBtn.addEventListener("click", () => {
-    document.querySelector(".overlay").classList.add("hidden");
-    xMarkBtn.closest(".window").classList.remove("right-0");
-    xMarkBtn.closest(".window").classList.add("-right-full");
-  });
+navOpenBtn.addEventListener("click", () => {
+  overlay.classList.add("overlay--visible");
+  navMenu.classList.remove("hidden");
+});
+navCloseBtn.addEventListener("click", () => {
+  overlay.classList.remove("overlay--visible");
+  navMenu.classList.add("hidden");
 });

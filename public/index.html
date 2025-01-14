@@ -660,15 +660,15 @@
     <div
       class="flex md:hidden items-center justify-between h-16 w-full px-4 bg-white dark:bg-zinc-700"
     >
-      <!-- Nav Icon -->
-      <div>
+      <!-- Nav Open Icon -->
+      <div class="nav-open-btn">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
           <use href="#bars-3"></use>
         </svg>
       </div>
       <!-- Nav Menu -->
       <div
-        class="window fixed z-20 right-0 top-0 bg-white dark:bg-zinc-700 min-h-screen w-64 px-4 pt-3"
+        class="nav-menu hidden fixed z-20 right-0 top-0 bg-white dark:bg-zinc-700 min-h-screen w-64 px-4 pt-3 transition-all overflow-auto"
       >
         <!-- Nav Menu Header -->
         <div class="flex justify-between items-center">
@@ -676,7 +676,8 @@
             <svg class="h-10 w-[41px]"><use href="#logo"></use></svg>
             <svg class="h-10 w-[100px]"><use href="#logo-type"></use></svg>
           </div>
-          <div class="x-mark-btn cursor-pointer">
+          <!-- Nav Close Btn -->
+          <div class="nav-close-btn cursor-pointer">
             <svg class="w-5 h-5 dark:text-white">
               <use href="#x-mark"></use>
             </svg>
@@ -780,9 +781,7 @@
       </div>
     </div>
     <!-- overlay -->
-    <div
-      class="md:hidden overlay w-full h-full bg-black/40 fixed inset-0 z-10"
-    ></div>
+    <div class="overlay"></div>
 
     <script type="text/javascript" src="./scripts/app.js"></script>
   </body>

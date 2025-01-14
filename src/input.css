@@ -71,3 +71,12 @@
     border-radius: 20px;
   }
 }
+
+@layer components {
+  .overlay {
+    @apply invisible opacity-0 md:hidden w-full h-full bg-black/40 fixed inset-0 z-10 transition-all;
+  }
+  .overlay--visible {
+    @apply visible opacity-100;
+  }
+}

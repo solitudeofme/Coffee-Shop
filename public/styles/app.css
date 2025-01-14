@@ -599,6 +599,31 @@ body {
   background-size: 100%;
 }
 
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  inset: 0px;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 0.4);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}
+
+.overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -613,10 +638,6 @@ body {
 
 .relative {
   position: relative;
-}
-
-.inset-0 {
-  inset: 0px;
 }
 
 .left-0 {
@@ -637,10 +658,6 @@ body {
 
 .top-full {
   top: 100%;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -731,10 +748,6 @@ body {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .max-h-\[525px\] {
@@ -870,6 +883,10 @@ body {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity, 1));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -916,10 +933,6 @@ body {
 .border-orange-300 {
   --tw-border-opacity: 1;
   border-color: rgb(253 186 116 / var(--tw-border-opacity, 1));
-}
-
-.bg-black\/40 {
-  background-color: rgb(0 0 0 / 0.4);
 }
 
 .bg-black\/50 {
@@ -1145,11 +1158,6 @@ body {
   border-radius: 20px;
 }
 
-.\*\:py-3 > * {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1203,11 +1211,6 @@ body {
 .child\:gap-x-2 > * {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-}
-
-.child\:py-3 > * {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .child\:py-5 > * {
