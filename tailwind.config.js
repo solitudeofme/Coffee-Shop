@@ -20,11 +20,12 @@ module.exports = {
         "4xl": "2rem",
       },
       fontFamily: {
-        "pinar-400": "pinar-400",
-        "pinar-700": "pinar-700",
-        arad: "Arad Regular",
-        aradMedium: "Arad Medium",
-        aradSemiBold: "Arad SemiBold",
+        dana: "Dana Regular",
+        danaMedium: "Dana Medium",
+        danaSemiBold: "Dana DemiBold",
+        morabbaLight: "Morabba Light",
+        morabbaMedium: "Morabba Medium",
+        morabbaSemiBold: "Morabba Bold",
       },
       letterSpacing: {
         tightest: "-0.065em",
@@ -32,6 +33,17 @@ module.exports = {
       spacing: {
         30: "120px",
       },
+      container: {
+        center: true,
+        DEFAULT: "1rem",
+        xl: "0.625rem",
+      },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
   },
   plugins: [

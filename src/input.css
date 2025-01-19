@@ -3,31 +3,37 @@
 @tailwind utilities;
 @layer base {
   @font-face {
-    font-family: "pinar-400";
-    src: local("pinar-400"),
-      url("../fonts/pinar/pinar-400.woff2") format("woff2");
+    font-family: "Morabba Light";
+    src: local("Morabba Light"),
+      url("../fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
-    font-family: "pinar-700";
-    src: local("pinar-700"),
-      url("../fonts/pinar/pinar-700.woff2") format("woff2");
+    font-family: "Morabba Medium";
+    src: local("Morabba Medium"),
+      url("../fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
-    font-family: "Arad Regular";
-    src: local("Arad Regular"),
-      url("../fonts/Arad/Arad-Regular.woff2") format("woff2");
+    font-family: "Morabba Bold";
+    src: local("Morabba Bold"),
+      url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+    font-display: swap;
   }
   @font-face {
-    font-family: "Arad Medium";
-    src: local("Arad Medium"),
-      url("../fonts/Arad/Arad-Medium.woff2") format("woff2");
+    font-family: "Dana Regular";
+    src: local("Dana Regular"),
+      url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
   }
   @font-face {
-    font-family: "Arad SemiBold";
-    src: local("Arad SemiBold"),
-      url("../fonts/Arad/Arad-SemiBold.woff2") format("woff2");
+    font-family: "Dana Medium";
+    src: local("Dana Medium"),
+      url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Dana DemiBold";
+    src: local("Dana DemiBold"),
+      url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
   }
   body {
     background-image: url("../images/headerBgDesktop.webp");

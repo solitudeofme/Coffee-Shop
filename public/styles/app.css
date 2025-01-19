@@ -555,48 +555,87 @@ video {
 }
 
 @font-face {
-  font-family: "pinar-400";
+  font-family: "Morabba Light";
 
-  src: local("pinar-400"),
-      url("../fonts/pinar/pinar-400.woff2") format("woff2");
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "pinar-700";
-
-  src: local("pinar-700"),
-      url("../fonts/pinar/pinar-700.woff2") format("woff2");
+  src: local("Morabba Light"),
+      url("../fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Arad Regular";
+  font-family: "Morabba Medium";
 
-  src: local("Arad Regular"),
-      url("../fonts/Arad/Arad-Regular.woff2") format("woff2");
+  src: local("Morabba Medium"),
+      url("../fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
+
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Arad Medium";
+  font-family: "Morabba Bold";
 
-  src: local("Arad Medium"),
-      url("../fonts/Arad/Arad-Medium.woff2") format("woff2");
+  src: local("Morabba Bold"),
+      url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Arad SemiBold";
+  font-family: "Dana Regular";
 
-  src: local("Arad SemiBold"),
-      url("../fonts/Arad/Arad-SemiBold.woff2") format("woff2");
+  src: local("Dana Regular"),
+      url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Dana Medium";
+
+  src: local("Dana Medium"),
+      url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Dana DemiBold";
+
+  src: local("Dana DemiBold"),
+      url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
 }
 
 body {
   background-image: url("../images/headerBgDesktop.webp");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .overlay {
@@ -640,6 +679,14 @@ body {
   position: relative;
 }
 
+.-left-64 {
+  left: -16rem;
+}
+
+.-right-64 {
+  right: -16rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -674,6 +721,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -690,11 +741,22 @@ body {
   margin-top: 1rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .inline-block {
@@ -754,8 +816,16 @@ body {
   height: 2rem;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[465px\] {
+  max-height: 465px;
 }
 
 .max-h-\[525px\] {
@@ -772,6 +842,10 @@ body {
 
 .w-30 {
   width: 120px;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-4 {
@@ -810,6 +884,10 @@ body {
   width: 41px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -829,6 +907,10 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -935,6 +1017,11 @@ body {
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
@@ -1015,6 +1102,10 @@ body {
   padding-bottom: 3rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1035,16 +1126,16 @@ body {
   text-align: center;
 }
 
-.font-arad {
-  font-family: Arad Regular;
+.font-dana {
+  font-family: Dana Regular;
 }
 
-.font-aradMedium {
-  font-family: Arad Medium;
+.font-danaMedium {
+  font-family: Dana Medium;
 }
 
-.font-aradSemiBold {
-  font-family: Arad SemiBold;
+.font-danaSemiBold {
+  font-family: Dana DemiBold;
 }
 
 .text-base {
@@ -1131,6 +1222,12 @@ body {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -1183,6 +1280,11 @@ body {
 .hover\:bg-teal-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-orange-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1247,6 +1349,11 @@ body {
 .child\:text-orange-300 > * {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+}
+
+.child\:text-zinc-700 > * {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity, 1));
 }
 
 .child\:transition-colors > * {
@@ -1378,4 +1485,9 @@ body {
 .dark\:hover\:bg-emerald-600:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+}
+
+.child\:dark\:text-white:where(.dark, .dark *) > * {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }

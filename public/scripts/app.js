@@ -1,10 +1,26 @@
 ("use script");
 
+// ============== functions ==============
+
+const applyNavCart = (menu, side, func) => {
+  if (func === "close") {
+    overlay.classList.remove("overlay--visible");
+    menu.classList.remove(`${side}-0`);
+    menu.classList.add(`-${side}-64`);
+  } else if (func === "open") {
+    overlay.classList.add("overlay--visible");
+    menu.classList.remove(`-${side}-64`);
+    menu.classList.add(`${side}-0`);
+  }
+};
 // Theme toggle button
 const navCloseBtn = document.querySelector(".nav-close-btn");
 const navOpenBtn = document.querySelector(".nav-open-btn");
+const cartCloseBtn = document.querySelector(".cart-close-btn");
+const cartOpenBtn = document.querySelector(".cart-open-btn");
 const overlay = document.querySelector(".overlay");
 const navMenu = document.querySelector(".nav-menu");
+const cartMenu = document.querySelector(".cart-menu");
 const shopTitle = document.querySelector(".shop-title");
 const themeToggleBtns = document.querySelectorAll(".theme-toggle-btn");
 const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
@@ -57,12 +73,22 @@ cartItemsInputs.forEach((inputElement) => {
 });
 
 navOpenBtn.addEventListener("click", () => {
-  overlay.classList.add("overlay--visible");
-  navMenu.classList.remove("hidden");
+  applyNavCart(navMenu, "right", "open");
+});
+cartOpenBtn.addEventListener("click", () => {
+  applyNavCart(cartMenu, "left", "open");
 });
 navCloseBtn.addEventListener("click", () => {
-  overlay.classList.remove("overlay--visible");
-  navMenu.classList.add("hidden");
+  applyNavCart(navMenu, "right", "close");
+});
+overlay.addEventListener("click", () => {
+  applyNavCart(navMenu, "right", "close");
+  applyNavCart(cartMenu, "left", "close");
+});
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".cart-close-btn")) {
+    applyNavCart(cartMenu, "left", "close");
+  }
 });
 
 shopSubMenuBtn.addEventListener("click", () => {
