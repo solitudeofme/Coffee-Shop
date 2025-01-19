@@ -25,7 +25,7 @@ module.exports = {
         danaSemiBold: "Dana DemiBold",
         morabbaLight: "Morabba Light",
         morabbaMedium: "Morabba Medium",
-        morabbaSemiBold: "Morabba Bold",
+        morabbaDemiBold: "Morabba Bold",
       },
       letterSpacing: {
         tightest: "-0.065em",
@@ -38,8 +38,13 @@ module.exports = {
         DEFAULT: "1rem",
         xl: "0.625rem",
       },
+      backgroundImage: {
+        "home-desktop": "url('../images/headerBgDesktop.webp')",
+        "home-mobile": "url('../images/headerBgMobile.webp')",
+      },
     },
     screens: {
+      xs: "480px",
       sm: "640px",
       md: "768px",
       lg: "1024px",

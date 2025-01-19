@@ -35,11 +35,6 @@
     src: local("Dana DemiBold"),
       url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
   }
-  body {
-    background-image: url("../images/headerBgDesktop.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 }
 @layer utilities {
   .custom-scrollbar-1 {
