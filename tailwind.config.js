@@ -37,7 +37,7 @@ module.exports = {
         center: true,
         padding: {
           DEFAULT: "1rem",
-          xl: "4.625rem",
+          xl: "0.625rem",
         },
       },
       backgroundImage: {

@@ -36,6 +36,44 @@
       url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
   }
 }
+
+@layer components {
+  .overlay {
+    @apply invisible opacity-0 md:hidden w-full h-full bg-black/40 fixed inset-0 z-10 transition-all;
+  }
+  .overlay--visible {
+    @apply visible opacity-100;
+  }
+  .circle {
+    @apply border rounded-full;
+  }
+  .circle--main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-1/2;
+  }
+  .circle--lg {
+    @apply hidden md:flex justify-center items-center w-[203px] h-[203px] border-white/25;
+  }
+  .circle--md {
+    @apply hidden md:flex justify-center items-center w-[145px] h-[145px] border-white/50;
+  }
+  .circle--sm {
+    @apply w-[95px] h-[95px] border-white/80;
+  }
+  @media screen and (min-width: 1280px) {
+    .dark .products {
+      background-image: url("../images/products-bg.png");
+      background-repeat: no-repeat;
+    }
+    .products {
+      background: linear-gradient(
+          rgba(243, 244, 246, 0.65),
+          rgba(243, 244, 246, 0.65)
+        ),
+        url("../images/products-bg.png"), no-repeat;
+    }
+  }
+}
+
 @layer utilities {
   .custom-scrollbar-1 {
     direction: ltr;
@@ -71,41 +109,29 @@
     height: 20px;
     border-radius: 20px;
   }
-}
-
-@layer components {
-  .overlay {
-    @apply invisible opacity-0 md:hidden w-full h-full bg-black/40 fixed inset-0 z-10 transition-all;
+  .flex-center {
+    @apply flex justify-center items-center;
   }
-  .overlay--visible {
-    @apply visible opacity-100;
+  .product-title {
+    @apply font-morabbaMedium text-2xl md:text-5xl text-zinc-700 dark:text-white;
   }
-  .circle {
-    @apply border rounded-full;
+  .product-subtitle {
+    @apply font-morabbaLight text-lg md:text-3xl text-zinc-700 dark:text-white mt-0.5 md:mt-1.5;
   }
-  .circle--main {
-    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-1/2;
+  .section-link {
+    @apply h-10 pr-3 pl-1  flex items-center gap-0 md:gap-x-1 text-orange-300 hover:bg-orange-300/20 text-base md:text-xl rounded-md transition-all cursor-pointer;
   }
-  .circle--lg {
-    @apply hidden md:flex justify-center items-center w-[203px] h-[203px] border-white/25;
+  .lined {
+    position: relative;
   }
-  .circle--md {
-    @apply hidden md:flex justify-center items-center w-[145px] h-[145px] border-white/50;
-  }
-  .circle--sm {
-    @apply w-[95px] h-[95px] border-white/80;
-  }
-  @media screen and (min-width: 1280px) {
-    .dark .products {
-      background-image: url("../images/products-bg.png");
-    }
-    .products {
-      background: linear-gradient(
-          rgba(243, 244, 246, 0.65),
-          rgba(243, 244, 246, 0.65)
-        ),
-        url("../images/products-bg.png");
-      height: 700px;
-    }
+  .lined::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ef4444;
+    position: absolute;
+    top: 50%;
+    left: 0;
   }
 }
