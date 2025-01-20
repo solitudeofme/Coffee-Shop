@@ -976,7 +976,7 @@
         class="relative h-[200px] xs:h-auto xs:aspect-[2/1] home bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]"
       >
         <div
-          class="container flex justify-end items-center md:min-h-screen h-full"
+          class="container relative overflow-y-hidden flex justify-end items-center md:min-h-screen h-full"
         >
           <div class="text-white">
             <h2
@@ -1000,14 +1000,29 @@
               است که در نواحی مختلف کمربند قهوه کشت میشود.
             </p>
           </div>
+          <!-- Circles Effect -->
+          <div class="circle circle--main circle--lg">
+            <div class="circle circle--md">
+              <div class="circle circle--sm"></div>
+            </div>
+          </div>
         </div>
         <!-- Curve svg -->
         <svg
-          class="absolute bottom-0 left-0 right-0 mx-auto text-gray-100 dark:text-zinc-800 w-[100px] h-[22px]"
+          class="hidden md:block absolute bottom-0 left-0 right-0 mx-auto text-gray-100 dark:text-zinc-800 w-[100px] h-[22px]"
         >
           <use href="#curve"></use>
         </svg>
+        <!-- Circle Arrow -->
+        <div
+          class="absolute left-0 bottom-0 right-0 mx-auto w-[30px] h-[30px] hidden md:flex justify-center items-center translate-y-1/2 rounded-full border-2 border-orange-300"
+        >
+          <svg class="w-4 h-4 text-zinc-700 dark:text-white -rotate-90">
+            <use href="#chevron-left"></use>
+          </svg>
+        </div>
       </section>
+      <section class="products"></section>
     </main>
     <script type="text/javascript" src="./scripts/app.js"></script>
   </body>

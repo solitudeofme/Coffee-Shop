@@ -35,8 +35,10 @@ module.exports = {
       },
       container: {
         center: true,
-        DEFAULT: "1rem",
-        xl: "0.625rem",
+        padding: {
+          DEFAULT: "1rem",
+          xl: "4.625rem",
+        },
       },
       backgroundImage: {
         "home-desktop": "url('../images/headerBgDesktop.webp')",

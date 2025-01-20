@@ -80,4 +80,32 @@
   .overlay--visible {
     @apply visible opacity-100;
   }
+  .circle {
+    @apply border rounded-full;
+  }
+  .circle--main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-1/2;
+  }
+  .circle--lg {
+    @apply hidden md:flex justify-center items-center w-[203px] h-[203px] border-white/25;
+  }
+  .circle--md {
+    @apply hidden md:flex justify-center items-center w-[145px] h-[145px] border-white/50;
+  }
+  .circle--sm {
+    @apply w-[95px] h-[95px] border-white/80;
+  }
+  @media screen and (min-width: 1280px) {
+    .dark .products {
+      background-image: url("../images/products-bg.png");
+    }
+    .products {
+      background: linear-gradient(
+          rgba(243, 244, 246, 0.65),
+          rgba(243, 244, 246, 0.65)
+        ),
+        url("../images/products-bg.png");
+      height: 700px;
+    }
+  }
 }
