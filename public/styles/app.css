@@ -730,7 +730,8 @@ video {
           rgba(243, 244, 246, 0.65),
           rgba(243, 244, 246, 0.65)
         ),
-        url("../images/products-bg.png"), no-repeat;
+        url("../images/products-bg.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -843,10 +844,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-2\.5 {
-  margin-top: 0.625rem;
 }
 
 .line-clamp-2 {
@@ -1643,19 +1640,14 @@ video {
   cursor: pointer;
 }
 
-.hover\:bg-teal-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-emerald-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-teal-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-teal-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-orange-300:hover {
@@ -1666,11 +1658,6 @@ video {
 .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1815,10 +1802,6 @@ video {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
   }
 
   .md\:block {
@@ -2061,29 +2044,19 @@ video {
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
-.dark\:hover\:bg-emerald-600:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:bg-zinc-800:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
-}
-
 .dark\:hover\:bg-emerald-500:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:hover\:bg-emerald-600:hover:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:hover\:text-emerald-500:hover:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity, 1));
-}
-
-.dark\:hover\:text-zinc-800:hover:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .dark\:group-hover\:text-zinc-800:where(.dark, .dark *) {
