@@ -975,6 +975,10 @@ video {
   display: none;
 }
 
+.aspect-\[1\/1\] {
+  aspect-ratio: 1/1;
+}
+
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
@@ -1056,16 +1060,12 @@ video {
   height: 90px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-dvh {
   height: 100dvh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[465px\] {
@@ -1074,10 +1074,6 @@ video {
 
 .max-h-\[525px\] {
   max-height: 525px;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-10 {
@@ -1479,6 +1475,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1850,6 +1851,10 @@ video {
   position: absolute;
   top: 50%;
   left: 0;
+}
+
+.body-scroll-hidden{
+  overflow: hidden;
 }
 
 .hover\:cursor-pointer:hover {

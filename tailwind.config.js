@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/*.{html,js}"],
-  safelist: ["overlay--visible"],
+  safelist: ["overlay--visible" , "body-scroll-hidden"],
   darkMode: "selector",
   theme: {
     extend: {

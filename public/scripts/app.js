@@ -26,6 +26,7 @@ const themeToggleBtns = document.querySelectorAll(".theme-toggle-btn");
 const cartItemsInputs = document.querySelectorAll("input[data-input-counter]");
 const shopSubMenu = document.getElementById("shop-sub-menu");
 const shopSubMenuBtn = document.getElementById("shop-sub-menu-btn");
+const body = document.body;
 
 themeToggleBtns.forEach((themeToggleBtns) => {
   themeToggleBtns.addEventListener("click", () => {
@@ -74,20 +75,25 @@ cartItemsInputs.forEach((inputElement) => {
 
 navOpenBtn.addEventListener("click", () => {
   applyNavCart(navMenu, "right", "open");
+  body.classList.add("body-scroll-hidden");
 });
 cartOpenBtn.addEventListener("click", () => {
   applyNavCart(cartMenu, "left", "open");
+  body.classList.add("body-scroll-hidden");
 });
 navCloseBtn.addEventListener("click", () => {
   applyNavCart(navMenu, "right", "close");
+  body.classList.remove("body-scroll-hidden");
 });
 overlay.addEventListener("click", () => {
   applyNavCart(navMenu, "right", "close");
   applyNavCart(cartMenu, "left", "close");
+  body.classList.remove("body-scroll-hidden");
 });
 document.addEventListener("click", (e) => {
   if (e.target.closest(".cart-close-btn")) {
     applyNavCart(cartMenu, "left", "close");
+    body.classList.remove("body-scroll-hidden");
   }
 });
 

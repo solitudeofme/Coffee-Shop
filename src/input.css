@@ -162,4 +162,7 @@
     top: 50%;
     left: 0;
   }
+  .body-scroll-hidden{
+    overflow: hidden;
+  }
 }
