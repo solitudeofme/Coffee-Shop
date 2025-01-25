@@ -1064,12 +1064,20 @@ video {
   height: 100vh;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .max-h-\[465px\] {
   max-height: 465px;
 }
 
 .max-h-\[525px\] {
   max-height: 525px;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-10 {
