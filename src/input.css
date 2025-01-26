@@ -140,10 +140,10 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
-  .product-title {
+  .section-title {
     @apply font-morabbaMedium text-2xl/8 md:text-5xl/[48px] text-zinc-700 dark:text-white;
   }
-  .product-subtitle {
+  .section-subtitle {
     @apply font-morabbaLight text-lg/8 md:text-3xl/[48px] text-zinc-700 dark:text-white mt-0.5 md:mt-1.5;
   }
   .section-link {
