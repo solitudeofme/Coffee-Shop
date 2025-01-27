@@ -128,6 +128,16 @@
     width: calc(100% - 1.5rem);
     height: 1px;
   }
+  .custom-marker{
+    @apply relative;
+  }
+  .custom-marker::before{
+    content: "";
+    display: block;
+    background-color: currentColor;
+    position: absolute;
+    @apply w-2 sm:w-2.5 h-1 rounded-full top-1/2 -right-4 sm:-right-5;
+  }
 }
 
 @layer utilities {
@@ -136,6 +146,9 @@
   }
   .custom-rtl {
     direction: rtl;
+  }
+  .custom-ltr {
+    direction: ltr;
   }
   .custom-scrollbar-1::-webkit-scrollbar {
     width: 15px;
@@ -193,4 +206,5 @@
   .body-scroll-hidden{
     overflow: hidden;
   }
+
 }

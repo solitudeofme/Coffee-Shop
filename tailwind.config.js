@@ -32,6 +32,7 @@ module.exports = {
       },
       spacing: {
         30: "120px",
+        4.5: "18px"
       },
       container: {
         center: true,
