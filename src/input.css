@@ -104,11 +104,6 @@
     @apply relative;
   } 
 
-  @media screen and (min-width: 480px) {
-   .services::after,.services::before{
-    content: none;
-   }
-  }
   .services::after, .services::before{
     content: "";
     display: block;
@@ -116,6 +111,11 @@
     inset: 0;
     margin: auto;
     background-color: #D1D5DB;
+  }
+  @media screen and (min-width: 480px) {
+   .services::after,.services::before{
+    content: none;
+   }
   }
   html.dark .services::after, html.dark .services::before{
     background-color: rgba(255, 255, 255,0.1);
