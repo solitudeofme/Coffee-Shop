@@ -815,7 +815,9 @@ video {
 }
 
 @media screen and (min-width: 480px) {
-  content: none;
+  .services::after,.services::before{
+    content: none;
+  }
 }
 
 .services::after, .services::before{
